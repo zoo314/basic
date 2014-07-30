@@ -1,4 +1,3 @@
-Basic
-=====
+#Basic
 
-** Work group **
+**Work group**
