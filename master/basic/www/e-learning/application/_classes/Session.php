@@ -14,7 +14,7 @@ class Session {
 
 	private static $_ssid;
 	private static $_config;
-	const SALT = 'HaisD|g#hyVRN=2%f!04C:q,5By67c=X';
+	const SALT = '59,omlPMfgIVKsysr$1%z^X)-]!w8e@0';
 
 	private function __construct() {}
 	private function __clone() {}
