@@ -627,7 +627,7 @@ legend{
     border-bottom: 1px solid #e5e5e5;
 }
 
-button, input[type="button"]{
+.btn, button, input[type="button"]{
     /* Structure */
     display: inline-block;
     *display: inline; /*IE 6/7*/
@@ -645,12 +645,12 @@ button, input[type="button"]{
 }
 
 /* Firefox: Get rid of the inner focus border */
-button::-moz-focus-inner,  input[type="button"]::-moz-focus-inner{
+.btn::-moz-focus-inner, button::-moz-focus-inner,  input[type="button"]::-moz-focus-inner{
     padding: 0;
     border: 0;
 }
 
-button, input[type="button"], input[type="reset"], input[type="submit"]{
+.btn, button, input[type="button"], input[type="reset"], input[type="submit"]{
     font-family: inherit;
     font-size: 100%;
     *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
@@ -666,7 +666,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"]{
     border-radius: 2px;
 }
 
-button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover,
+.btn:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover,
 button:focus, input[type="button"]:focus, input[type="submit"]:focus, input[type="reset"]:focus{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
@@ -675,10 +675,10 @@ button:focus, input[type="button"]:focus, input[type="submit"]:focus, input[type
     background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
     background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
 }
-button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus{
+.btn:focus, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus{
     outline: 0;
 }
-button:active, input[type="button"]:active, , input[type="reset"]:active, input[type="submit"][disabled]{
+.btn:active, button:active, input[type="button"]:active, , input[type="reset"]:active, input[type="submit"][disabled]{
     box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
 }
 
@@ -695,9 +695,39 @@ button[disabled], input[type="button"][disabled], input[type="reset"][disabled],
 }
 
 /* Firefox: Get rid of the inner focus border */
-button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner{
+.btn::-moz-focus-inner, button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner{
     padding: 0;
     border: 0;
+}
+
+.btn-primary, .btn-selected, a.btn-primary, a.btn-selected {
+	background-color: #0078e7;
+	color: #fff;
+}
+
+.btn-success,
+.btn-error,
+.btn-warning,
+.btn-secondary {
+	color: white;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-success {
+	background: rgb(28, 184, 65); /* this is a green */
+}
+
+.btn-error {
+	background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.btn-warning {
+	background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.btn-secondary {
+	background: rgb(66, 184, 221); /* this is a light blue */
 }
 
 /*!
@@ -1362,6 +1392,11 @@ img {
 #home img {
   width: 100%;
   height: auto
+}
+
+.intro > h1 {
+	padding: 0;
+	margin: 0
 }
 
 .desc {
